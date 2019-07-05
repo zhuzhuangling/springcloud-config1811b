@@ -1,2 +1,15 @@
 server:
    port: 8090
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3305/1811b?useUnicode=true&characterEncoding=utf-8
+    username: root
+
+mybatis:
+  config-locations: classpath:mybatis/confg.xml
+  mapper-locations: classpath:mybatis/mapper-*.xml
+  type-aliases-package: com.jk.model
